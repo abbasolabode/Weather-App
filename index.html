@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <!-- GOOGLE ICONS -->
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <title>Weather App</title>
+    </head>
+
+    <body>
+        <!-- General container -->
+        <main class="general-weather-container">
+            <div class="search-container">
+                <!-- Input field -->
+                <input type="search" name="" id="" placeholder="Search city" class="input-city">
+                <p class="error-message">Incorrect city input</p>
+                <!-- Search button -->
+                <button type="button" class="search-btn">
+                    <ion-icon name="search" class="search-icon"></ion-icon>
+                </button>
+            </div>
+
+
+
+
+            <!--weather Content area  -->
+            <div class="weather-general-info-container">
+                <div class="weather-info-container">
+                    <div class="weather-heading-container">
+                        <h1 class="city-name">NEW YORK</h1>
+                        <span class="country">CA</span>
+                    </div>
+
+
+                    <div class="weather-condition-info">
+                        <div class="weather-container-image">
+                            <img src="./weather-images/icons8-sun-96.png" alt="" class="weather-condition-image">
+                        </div>
+                    </div>
+
+
+                    <div class="weather-degree-container">
+                        <h2 class="temp">20°C</h2>
+                    </div>
+
+                </div>
+
+
+                <!-- Weather details -->
+                <div class="weather-details-container">
+                    <div class="humidity-container condition-detail">
+                        <div class="humidity-container-img">
+                            <img src="./weather-images/weather.png" alt="" class="weather-detail-img">
+                        </div>
+
+                        <div class="humidity-container-text condition-text">
+                            <p class="humidity-text">Humidity</p>
+                            <p class="humidity-value">35%</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="wind-container  condition-detail">
+                        <div class="wind-container-img">
+                            <img src="./weather-images/storm.png" alt="" class="weather-detail-img">
+                        </div>
+
+                        <div class="wind-container-text condition-text">
+                            <p class="wind-speed-text">Wind Speed</p>
+                            <p class="wind-speed-value">10.29 <span class="kilo">km/h</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- JS -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="./script.js"></script>
+    </body>
+
+</html>
